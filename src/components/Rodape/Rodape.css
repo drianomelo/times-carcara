@@ -1,0 +1,29 @@
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding: 1.5rem 0;
+
+  background-color: #6278f7;
+}
+
+.rodape .social-medias {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.rodape .social-medias img {
+  width: 15px;
+}
+
+.rodape .logo {
+  width: 100px;
+}
+
+.rodape h6 {
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}

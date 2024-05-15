@@ -1,0 +1,35 @@
+.membro {
+  width: 280px;
+}
+
+.membro .cabecalho {
+  border-radius: 10px 10px 0 0;
+}
+
+.membro img {
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -50px;
+}
+
+.membro .rodape-m {
+  background-color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 10px 10px;
+  padding: 90px 0 40px;
+}
+
+.membro .rodape-m h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.membro .rodape-m h5 {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0 16px;
+  margin: 0;
+}

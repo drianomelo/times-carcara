@@ -4,9 +4,7 @@ import ListaSuspensa from "../ListaSuspensa";
 import "./Formulario.css";
 import { useState } from "react";
 
-const Formulario = () => {
-  const times = ["Vôlei", "Basquete", "League of Legends"];
-
+const Formulario = (props) => {
   const [nome, setNome] = useState("");
   const [posicao, setPosicao] = useState("");
   const [imagem, setImagem] = useState("");
@@ -14,7 +12,15 @@ const Formulario = () => {
 
   const aoSalvar = (evento) => {
     evento.preventDefault();
-    console.log("foi", nome, posicao, imagem, time);
+    props.aoMembroCadastrado({
+      nome,
+      posicao,
+      imagem,
+      time,
+    });
+    setNome("");
+    setPosicao("");
+    setImagem("");
   };
 
   return (
@@ -45,7 +51,7 @@ const Formulario = () => {
         <ListaSuspensa
           obrigatorio={true}
           label="Time"
-          itens={times}
+          itens={props.times}
           valor={time}
           aoAlterado={(valor) => setTime(valor)}
         />
