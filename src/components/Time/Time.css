@@ -1,6 +1,6 @@
 .time {
   text-align: center;
-
+  position: relative;
   padding: 1rem;
 }
 
@@ -19,4 +19,10 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 1.5rem;
+}
+
+.input-cor {
+  position: absolute;
+  top: 20px;
+  right: 50px;
 }

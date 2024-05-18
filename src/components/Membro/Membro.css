@@ -1,5 +1,6 @@
 .membro {
   width: 280px;
+  position: relative;
 }
 
 .membro .cabecalho {
@@ -32,4 +33,10 @@
   line-height: 22px;
   padding: 0 16px;
   margin: 0;
+}
+
+.deletar {
+  position: absolute;
+  right: -10px;
+  top: -10px;
 }
